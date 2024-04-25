@@ -1,0 +1,11 @@
+README.md
+setup.py
+eqsolver/ISLM.py
+eqsolver/__init__.py
+eqsolver/gasConsts.py
+eqsolver/gasEquations.py
+eqsolver/solver.py
+eqsolver.egg-info/PKG-INFO
+eqsolver.egg-info/SOURCES.txt
+eqsolver.egg-info/dependency_links.txt
+eqsolver.egg-info/top_level.txt
