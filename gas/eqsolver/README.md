@@ -16,9 +16,13 @@ To use the tool, one instantiates the solver class with as input a class of equa
 
 [Here is the code that uses this class to find solutions to problems involivng the ISLM.](https://github.com/brighamturner12/eqsolver/blob/main/economicsExamples.py)
 
+[Here are what the results would be.](https://github.com/brighamturner12/eqsolver/blob/main/resultsISLM.txt)
+
 [Here is an example containing a class for the physics gas equations.](https://github.com/brighamturner12/eqsolver/blob/main/gas/eqsolver/eqsolver/gasEquations.py)
 
 [And here these equations are used to solve physics problems.](https://github.com/brighamturner12/eqsolver/blob/main/gasExamples.py)
+
+[Here are what the results would be for the physics model.](https://github.com/brighamturner12/eqsolver/blob/main/resultsPhysicsGas.txt)
 
 One must note that in these examples, the entire file containing the model is imported as a class.
 
