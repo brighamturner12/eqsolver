@@ -5,13 +5,16 @@ with open("README.md", "r") as fh:
 
 setup(
     name='eqsolver',
-    version='0.2.2',
+    version='0.2.3',
     author='Brigham Turner',
     author_email='brighamturner12@gmail.com',
     description='Define model from system of equations, algebraically solve for variables, calculate boiling point, latent heat, other physics gas concepts',
     long_description=long_description, 
     long_description_content_type="text/markdown", 
     packages=find_packages(),
+    install_requires=[ 
+        "sympy"
+        ], 
     license="MIT",
     classifiers=[
     'Programming Language :: Python :: 3',

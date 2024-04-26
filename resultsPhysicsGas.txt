@@ -1,0 +1,75 @@
+finding energy required to decrease volume of gas by factor of 2, with zero outside pressure:
+   thermalEnergy: 89255.58984656792
+   compressionEnergy: 89255.5898465679
+
+solving for energy numerically:
+   thermalEnergy: 89255.5898465679
+   compressionEnergy: 89255.5898465679
+
+energy required to decrease volume by 2, with normal outside pressure:
+   compressionEnergy: 38605.58984656792
+
+energy required to decrease volume by 2, algebraic solution:
+    -1.0*outside_p*(v1 - v2) - 1.5*p1*(v1 - v2*(v1/v2)**1.66666666666667)
+
+boiling point by pressure:
+   46.132 C at 10% normal pressure: 
+   60.42 C at 20% normal pressure: 
+   69.477 C at 30% normal pressure: 
+   76.249 C at 40% normal pressure: 
+   81.713 C at 50% normal pressure: 
+   86.324 C at 60% normal pressure: 
+   90.328 C at 70% normal pressure: 
+   93.879 C at 80% normal pressure: 
+   97.076 C at 90% normal pressure: 
+   99.99 C at 100% normal pressure: 
+   102.67 C at 110% normal pressure: 
+   105.155 C at 120% normal pressure: 
+   107.473 C at 130% normal pressure: 
+   109.648 C at 140% normal pressure: 
+   111.698 C at 150% normal pressure: 
+   113.638 C at 160% normal pressure: 
+   115.481 C at 170% normal pressure: 
+   117.235 C at 180% normal pressure: 
+   118.912 C at 190% normal pressure: 
+   120.517 C at 200% normal pressure: 
+
+latent heat by pressure:
+   notes:
+      note that latent heat really is 2d - it depends on both pressure and temperature
+      here we only follow latent heat found at the boiling point for each pressure
+      notice that latent heat is decreasing, this matches standard teachings
+      likewise, at normal pressure I get L = 41.498 KJ / mole, which is close to
+      40.65 kJ/mol, which is the value reported on the wikipedia for enthalpy of
+      vaporization, we don't know which pressure and temperature combo that
+      number comes from, so the slight discrepency shouldn't be too concerning.
+      unfortunately, this all relies on knowing the boiling point of water which
+      isn't an exact science. here I really on the Antoine equation, which is technically
+      only an equation highly correlated with boiling point. The only other way would be
+      be to download a dataset giving water boiling point for each pressure, or to wait
+      until physicists provide a new equation that is more precise.
+   results:
+      43.217 KJ / mole at 10% normal pressure: 
+      42.696 KJ / mole at 20% normal pressure: 
+      42.393 KJ / mole at 30% normal pressure: 
+      42.178 KJ / mole at 40% normal pressure: 
+      42.012 KJ / mole at 50% normal pressure: 
+      41.876 KJ / mole at 60% normal pressure: 
+      41.762 KJ / mole at 70% normal pressure: 
+      41.663 KJ / mole at 80% normal pressure: 
+      41.576 KJ / mole at 90% normal pressure: 
+      41.498 KJ / mole at 100% normal pressure: 
+      41.427 KJ / mole at 110% normal pressure: 
+      41.363 KJ / mole at 120% normal pressure: 
+      41.304 KJ / mole at 130% normal pressure: 
+      41.249 KJ / mole at 140% normal pressure: 
+      41.199 KJ / mole at 150% normal pressure: 
+      41.151 KJ / mole at 160% normal pressure: 
+      41.106 KJ / mole at 170% normal pressure: 
+      41.064 KJ / mole at 180% normal pressure: 
+      41.025 KJ / mole at 190% normal pressure: 
+      40.987 KJ / mole at 200% normal pressure: 
+
+temperature and pressure increase after decreasing volume by factor of 2:
+   temperature increase: 169.5859470423968 C
+   pressure increase: 220307.45312875725 pascals

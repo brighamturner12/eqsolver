@@ -5,8 +5,22 @@
 1) define your own model of equations, and use the solver to solve them.
 2) solve physics problems relating to gas: the energy to compress gas, final pressure/temperature after gas compression, boiling points and latent heat of water. 3) this solver can solve the ISLM economics model.
 
+Finaly, this solver also solves a bug in sympy allowing larger systems of equations to be solved.
+
 <h3>Solver Overview</h3>
 To use the tool, one instantiates the solver class with as input a class of equations. One then can call this class with a method name equal to one of these equations, or several (separated by underscores), using the names of known variables as arguments. The output is a dictionary showing the values of unknown variables.
+
+<h3>Examples</h3>
+
+[Here is an example for making a class containing equations - here for the equations defining the ISLM economics model.](https://github.com/brighamturner12/eqsolver/blob/main/gas/eqsolver/eqsolver/ISLM.py)
+
+[Here is the code that uses this class to find solutions to problems involivng the ISLM.](https://github.com/brighamturner12/eqsolver/blob/main/economicsExamples.py)
+
+[Here is an example containing a class for the physics gas equations.](https://github.com/brighamturner12/eqsolver/blob/main/gas/eqsolver/eqsolver/gasEquations.py)
+
+[And here these equations are used to solve physics problems.](https://github.com/brighamturner12/eqsolver/blob/main/gasExamples.py)
+
+One must note that in these examples, the entire file containing the model is imported as a class.
 
 <h3>Equation Class</h3>
 Each variable in this class is an equation - as described earlier, to use the equation, the solver class is called with method name equal to the name of the variable storing the equations. The solver won't use all of the equations in the equation class, only the ones referenced in a function call (again, each equation name separated by an underscore).

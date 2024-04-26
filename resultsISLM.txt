@@ -1,0 +1,55 @@
+Working through a basic problem in the ISLM model:
+   here is a basic solution to a problem involving the ISLM model.
+   here I set a (the amount consumed if disposable income were zero), to 35
+   b - them marginal propensity to consume - is .5
+   Tax rate is .1
+   I0 - the investments if interest rate was zero - is 30
+   h - the decrease in investment demand for increase in interest rate - is 200
+   k - the sensity to money demand in relation to gdp - is 1.25.
+   mu - the decrease (fractional) of money demand in relation to interest rate - is 2
+   MS - the money supply - is 100
+   this is a very over simplified model obviously. A few issues with it include:
+   1) it doesn't take into account the supply side
+   2) investment demand should itself be a function of gdp
+   3) it doesnt' take into account labor - people should be willing to work more if less is taxed
+   4) it doesn't take into account supply side of investments - people should be put more income
+      into investments if interest rate is higher
+   Thus we see that the ISLM model is fairly simple.
+   In my view, the most important true principal of the model is that interest rate is not
+   arbitrary and is (or usually is), determined by the market reaching equilibrium
+   To better understand the model, I reccomend looking at the equations in ISLM.py
+
+Solution:
+   money demand is: 100.0
+   interest rate is: 0.1
+   GDP is: 100.0
+   Government spending is: 10.0
+   disposable income is: 90.0
+   Consumption is: 80.0
+   Investments are: 10.0
+
+Effect of tax rate on gdp:
+   tax rate: 0.0% GDP: 96.24
+   tax rate: 20.0% GDP: 104.28
+   tax rate: 40.0% GDP: 115.07
+   tax rate: 60.0% GDP: 130.8
+   tax rate: 80.0% GDP: 157.6
+   GDP increases with increased taxes, because government spending is counted
+   as part of GDP. Discounting government spending, investment and consumption
+   decline with increased Gov't spending. It's important that this is just a
+   an overly simplified model.
+
+Effect of tax rate on Consumption:
+   tax rate: 0.0% Consumption: 83.12
+   tax rate: 20.0% Consumption: 76.71
+   tax rate: 40.0% Consumption: 69.52
+   tax rate: 60.0% Consumption: 61.16
+   tax rate: 80.0% Consumption: 50.76
+   as we see, with higher taxes, consumption decreases.
+
+Algebraic solution to the model:
+   it turns out that solving this algebraicly would be very difficult
+   here is the algebraic solution for GDP:
+    (I0*k*mu + a*k*mu - h*k + sqrt(k*(I0**2*k*mu**2 + 2*I0*a*k*mu**2 - 2*I0*h*k*mu + 4*Ms*Tr*b*h*mu - 4*Ms*Tr*h*mu - 4*Ms*b*h*mu + 4*Ms*h*mu + a**2*k*mu**2 - 2*a*h*k*mu + h**2*k)))/(2*k*mu*(Tr*b - Tr - b + 1))
+   and here is the algebraic solution for consumption:
+    (-I0*b*k*mu + a*b*k*mu - 2*a*k*mu + b*h*k - b*sqrt(k*(I0**2*k*mu**2 + 2*I0*a*k*mu**2 - 2*I0*h*k*mu + 4*Ms*Tr*b*h*mu - 4*Ms*Tr*h*mu - 4*Ms*b*h*mu + 4*Ms*h*mu + a**2*k*mu**2 - 2*a*h*k*mu + h**2*k)))/(2*k*mu*(b - 1))
